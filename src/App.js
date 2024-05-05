@@ -7,10 +7,10 @@ import NotFound from './NotFound';
 function App() {
   return (
     <div className="app">
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router basename="/react-books-list">
         <div className="content">
           <Routes>
-            <Route path='/' element={<Home />} />
+            <Route exact path='/react-books-list' element={<Home />} />
             <Route path='/books/:id' element={<BookDetails />} />
             <Route path='*' element={<NotFound />} />
           </Routes>
