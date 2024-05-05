@@ -1,0 +1,132 @@
+*{
+    font-family: 'Urbanist';
+}
+.home{
+    text-align: center;
+    margin:10px auto;
+    height:80vh;
+    overflow-y: scroll;
+}
+body{
+    background-image: url('./image/book2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Urbanist';
+    font-size: 22px;
+}
+
+
+
+.navbar{
+    text-align: center;
+    margin: 0 auto;
+    background: #44350ce8;
+    border-radius: 15px;
+    padding: 20px;
+}
+.navbar h1{
+    color:rgb(255, 251, 255);
+    font-size:10vh;
+    margin:0;
+}
+
+
+
+
+
+.books-list {
+    width: 80%;
+    margin: 12px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr)); 
+    grid-gap: 20px;
+}
+.book-preview a{
+    text-decoration: none;
+    background-color: #4a36059a;
+    color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 28px;
+    height:220px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding:20px;
+    box-shadow: -8px 8px 4px rgb(66, 44, 3);
+}
+.book-preview a:hover{
+    background-color: rgb(255, 251, 242);
+    color: #4a3605;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+
+
+
+.book-details{
+    color: #4a3605;
+    border: 1px solid #4a3605;
+    background-color: #fffaed9a;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px ;
+    padding-bottom: 20px;
+    width:75%;
+    height: 70%;
+    margin:10vh auto;
+    box-shadow: -10px 10px 30px rgba(121, 121, 121, 0.336);
+}
+.book-details table{
+    text-align: left;
+    margin:10px auto;
+    font-size: xx-large;
+    width:60%;
+} 
+.book-details button {
+    background: #fffdf8;
+    border:5px solid #4a3605;
+    color: #4a3605;
+    padding: 12px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.book-details button:hover{
+    background: #4a3605;
+    color: #fff;
+}
+.book-details h1{
+    color:rgb(105, 5, 5);
+    font-size: 200%;
+    padding-bottom: 10px;
+    border-bottom: 0.2px dashed #4a3605;
+    text-align: center;
+}
+.book-details table th,.book-details table td{
+    width:50%;
+    vertical-align: top;
+}
+table td.title{
+    font-weight: 900;
+}
+
+
+.notfound{
+    text-align: center;
+    margin:50px ;
+    margin-right: 200px;
+    color: #44350ce8;
+    font-weight: 1100;
+}
+.notfound a{
+    text-decoration: none;
+    font-weight:bolder;
+    font-size: 130%;
+    border-bottom: 1px solid rgb(236, 236, 188);
+    color: #634b08e8;
+}
+
